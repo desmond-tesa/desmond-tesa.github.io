@@ -16,10 +16,15 @@
             <a-asset-item id="animated-drone" src="https://raw.githubusercontent.com/desmond-tesa/desmond-tesa.github.io/master/buster_drone/scene.gltf"></a-asset-item>
             <a-asset-item id="animated-dancing-cat" src="https://raw.githubusercontent.com/desmond-tesa/desmond-tesa.github.io/master/voxel_royal_cat/scene.gltf"></a-asset-item>
             <a-asset-item id="medieval_fantasy_book" src="https://raw.githubusercontent.com/desmond-tesa/desmond-tesa.github.io/master/medieval_fantasy_book/scene.gltf"></a-asset-item>
+            <a-asset-item id="boy-blue" src="https://raw.githubusercontent.com/desmond-tesa/desmond-tesa.github.io/master/lost-toyz/blue-boy.glb"></a-asset-item>
         </a-assets>
 
         <a-marker type='barcode' value='7'>
-            <a-box position='0 0.5 0' rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-box>
+            <a-entity
+                animation-mixer
+                gltf-model="#boy-blue"
+                scale="1 1 1">
+            </a-entity>    
         </a-marker>
 
         <!-- handle marker with kanji preset -->
@@ -35,7 +40,7 @@
              <a-entity
                 animation-mixer
                 gltf-model="#medieval_fantasy_book"
-                scale="0.1 0.1 0.1">
+                scale="0.005 0.005 0.005">
             </a-entity>
         </a-marker>
 
