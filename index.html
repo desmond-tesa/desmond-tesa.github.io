@@ -13,7 +13,7 @@
 
         <a-assets>
             <a-asset-item id="animated-drone" src="https://raw.githubusercontent.com/desmond-tesa/desmond-tesa.github.io/master/buster_drone/scene.gltf"></a-asset-item>
-            <a-asset-item id="animated-dancing-cat" src="https://raw.githubusercontent.com/desmond-tesa/desmond-tesa.github.io/master/voxel_royal_cat/scene.gltf"></a-asset-item>
+            <a-asset-item id="animated-dancing-cat" src="https://raw.githubusercontent.com/desmond-tesa/desmond-tesa.github.io/master/voxel_royal_cat/scene.gltf" rotation="90 0 0"></a-asset-item>
         </a-assets>
 
         <a-marker type='barcode' value='7'>
@@ -25,14 +25,14 @@
             <a-entity
                 animation-mixer
                 gltf-model="#animated-dancing-cat"
-                scale=".01 .01 .01">
+                scale="1 1 1">
             </a-entity>
         </a-marker>
 
         <a-marker id="animated-marker" type='pattern' url='https://raw.githubusercontent.com/desmond-tesa/desmond-tesa.github.io/master/pattern-letterD.patt'>
             <a-entity
                 animation-mixer
-                gltf-model="#animated-asset"
+                gltf-model="#animated-drone"
                 scale=".01 .01 .01">
             </a-entity>
         </a-marker>
@@ -41,7 +41,7 @@
             <a-entity
                 animation-mixer
                 gltf-model="#animated-drone"
-                scale=".005 .005 .005">
+                scale=".01 .01 .01">
             </a-entity>
         </a-marker>
 
